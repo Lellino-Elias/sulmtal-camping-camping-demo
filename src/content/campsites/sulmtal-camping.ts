@@ -74,7 +74,7 @@ const sulmtalCamping: CampsiteConfig = {
       {
         title: "Stellplätze zwischen Wiesen und Hügeln",
         text:
-          "36 parzellierte Plätze auf flachem Wiesengelände, eingebettet zwischen Bäumen und der Hügellandschaft der Weststeiermark — mit Strom und WLAN.",
+          "36 parzellierte Plätze auf flachem Wiesengelände zwischen Bäumen und steirischen Hügeln — mit Strom und WLAN.",
         image: {
           src: `${IMG}/stellplaetze-luftbild.webp`,
           alt: "Luftbild der parzellierten Stellplätze von Sulmtal Camping",

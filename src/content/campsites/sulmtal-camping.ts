@@ -2,9 +2,11 @@ import type { CampsiteConfig } from "../types";
 
 /**
  * Sulmtal Camping — Pölfing-Brunn, südliche Weststeiermark (Schilcherland).
- * Inhalte zu 100 % aus der eigenen Quelle (raw/digest). Bildlage ist dünn:
- * nur 3 verwendbare Fotos (alle ≥1500px) — Pillars/Galerie/Breather blenden
- * sich daher ehrlich aus, statt mit Wiederholungen zu padden.
+ * Inhalte zu 100 % aus der eigenen Quelle (raw/digest). Bildlage bleibt dünn:
+ * nach dem Nach-Scrape gibt es nur wenige große, scharfe On-Site-Fotos
+ * (3 Luft-/Bodenaufnahmen ≥1500px für Hero + CampingFeatures, dazu 4 kleinere
+ * echte Wiesen-/Stellplatzfotos für die Galerie). Pillars/Breather bleiben
+ * ehrlich leer, statt mit Händler-/Stock-/Kartenbildern zu padden.
  */
 const IMG = "/campsites/sulmtal-camping";
 
@@ -34,8 +36,9 @@ const sulmtalCamping: CampsiteConfig = {
     emphasis: "der Naturbadeteich",
   },
 
-  // Nur 3 verwendbare Fotos → Pillars bleiben leer (BrandStatement blendet sich aus),
-  // damit kein 3er-Raster halb gefüllt bleibt.
+  // Keine 3 gleichwertigen On-Site-Motive für Overlay-Kacheln vorhanden →
+  // Pillars bleiben leer (BrandStatement blendet sich aus), statt das 3er-Raster
+  // mit Händler-/Stock-Bildern halb zu füllen.
   pillars: [],
 
   usps: [
@@ -114,8 +117,24 @@ const sulmtalCamping: CampsiteConfig = {
     headingEmphasis: "Sulmtal",
     intro: "Ein paar Aufnahmen von der Anlage mitten im grünen Schilcherland.",
     tag: "Auch im Winter geöffnet",
-    // Weniger als 4 honest belegte Fotos vorhanden → Galerie blendet sich aus.
-    images: [],
+    images: [
+      {
+        src: `${IMG}/galerie-wiese-sonnenschirm.webp`,
+        alt: "Wohnwagen mit Sonnenschirm auf der grünen Stellplatzwiese von Sulmtal Camping",
+      },
+      {
+        src: `${IMG}/galerie-wohnwagen-wiese.webp`,
+        alt: "Wohnwagen und Wohnmobile zwischen jungen Bäumen auf der Wiese bei Sulmtal Camping",
+      },
+      {
+        src: `${IMG}/galerie-stellplatz-zelt.webp`,
+        alt: "Stellplätze mit Vorzelt und Campingmöbeln auf der Wiese von Sulmtal Camping",
+      },
+      {
+        src: `${IMG}/galerie-gruene-wiese.webp`,
+        alt: "Begrünte Stellplatzwiese mit jungen Bäumen und Wohnwagen bei Sulmtal Camping",
+      },
+    ],
   },
 
   booking: {

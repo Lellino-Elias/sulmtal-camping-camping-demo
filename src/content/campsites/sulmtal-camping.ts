@@ -120,7 +120,7 @@ const sulmtalCamping: CampsiteConfig = {
     images: [
       {
         src: `${IMG}/galerie-wiese-sonnenschirm.webp`,
-        alt: "Wohnwagen mit Sonnenschirm auf der grünen Stellplatzwiese von Sulmtal Camping",
+        alt: "Wohnwagen und Wohnmobile auf der grünen Stellplatzwiese von Sulmtal Camping im Sommer",
       },
       {
         src: `${IMG}/galerie-wohnwagen-wiese.webp`,

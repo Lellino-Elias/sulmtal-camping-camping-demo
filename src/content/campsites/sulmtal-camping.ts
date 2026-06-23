@@ -128,7 +128,7 @@ const sulmtalCamping: CampsiteConfig = {
       },
       {
         src: `${IMG}/galerie-stellplatz-zelt.webp`,
-        alt: "Stellplätze mit Vorzelt und Campingmöbeln auf der Wiese von Sulmtal Camping",
+        alt: "Vogelperspektive auf Naturbadeteich Kipferlbad und die parzellierten Stellplätze von Sulmtal Camping",
       },
       {
         src: `${IMG}/galerie-gruene-wiese.webp`,
